@@ -10,6 +10,7 @@ let output = document.querySelector('.output');
 //BOTTONE "VERIFICA"
 const button = document.querySelector('.btn');
 
+//AGGIUNGO L'EVENTO AL BOTTONE E GLI INSERISCO LA FUNZIONE
 button.addEventListener('click', wordCheck());
 
 
