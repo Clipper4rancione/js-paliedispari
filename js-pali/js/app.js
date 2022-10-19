@@ -6,16 +6,21 @@ Creare una funzione per capire se la parola inserita è palindroma
 //INPUT DELLA PAROLA
 let word = document.querySelector('input').value;
 //OUTPUT DELL'ESITO
-let output = document.querySelector('.output');
+
 //BOTTONE "VERIFICA"
-const button = document.querySelector('.btn');
+const button = document.querySelector('button');
 
 //AGGIUNGO L'EVENTO AL BOTTONE E GLI INSERISCO LA FUNZIONE
-button.addEventListener('click', wordCheck());
+button.addEventListener('click', function(){
+    wordCheck();
+});
+
+
 
 
 
 function wordCheck() {
+    let output = document.querySelector('.output');
     //USO .SPLIT PER TRASFORMARE LA PAROLA IN UN ARRAY
     let splitString = word.split("");
     //console.log(splitString);
@@ -32,7 +37,5 @@ function wordCheck() {
     }else{
         output.innerHTML = 'NON E\' PALINDROMA'
     }
-
-
 }
 
