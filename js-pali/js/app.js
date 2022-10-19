@@ -24,7 +24,8 @@ function wordCheck() {
     //USO .SPLIT PER TRASFORMARE LA PAROLA IN UN ARRAY
     let splitString = word.split("");
     //console.log(splitString);
-    //USO L'ATTRIBUTO .REVERSE DEGLI ARRAY PER "CAPOVOLGERE" LA PAROLA
+
+    //USO IL METODO .REVERSE DEGLI ARRAY PER "CAPOVOLGERE" LA PAROLA
     let reverseArray = splitString.reverse();
     //console.log(reverseArray);
 
