@@ -11,13 +11,16 @@ Dichiariamo chi ha vinto.
 // A seconda di quello che sceglie l'utente il pc sceglie l'opposto
 const userBet = prompt('Pari o Dispari?');
 const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+let computerBet;
 
 if(userBet === 'pari', 'Pari', 'PARI'){
     console.log('L\'utente ha scelto: Pari')
-    console.log('il pc ha scelto: Dispari');
+    computerBet = 'dispari',
+    console.log(computerBet);
 }else if(userBet === 'dispari', 'Dispari', 'DISPARI'){
     console.log('L\'utente ha scelto: Dispari')
-    console.log('il pc ha scelto: Pari');
+    computerBet = 'pari'
+    console.log(computerBet);
 }else{
     alert('Puoi solo scrivere pari o dispari');
 };
@@ -35,15 +38,18 @@ function randomNumberGenerator(){
     console.log('Il Computer sceglie:', randomNumber);
     console.log('L\'utente sceglie', userNumber);
     
-    //SOMMO I 2 NUMERI
+        //SOMMO I 2 NUMERI
     const somma = userNumber + randomNumber;
+
     //STABILISCO SE LA SOMMA DEI DUE NUMERI E' PARI O DISPARI
     if(!(somma % 2)){
-        console.log('il risultato è pari');
+          console.log('il risultato è pari');
     }else{
-        console.log('il risultato è dispari');
+          console.log('il risultato è dispari');
     } 
+    
 };
+
 
 
 
